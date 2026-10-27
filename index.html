@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Krishna - Android apps</title>
+<meta name="description" content="Android apps built and shipped from a phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3eee4;--ink:#1d1a16;--mute:#6f675b;--line:#d8cfbf;--hot:#b8441b}
+@media (prefers-color-scheme:dark){:root{--bg:#16140f;--ink:#ece5d6;--mute:#9a9181;--line:#2f2a21;--hot:#e0693a}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.6 Newsreader,Georgia,serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+.mono,.ver,.stack,.no,nav a,footer{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px}
+nav{padding:22px 0;display:flex;justify-content:space-between;border-bottom:1px solid var(--line)}
+nav a{color:var(--ink);text-decoration:none;margin-left:18px}nav a:first-child{margin:0;font-weight:500}nav a:hover{color:var(--hot)}
+h1{font-size:clamp(54px,12vw,112px);line-height:.95;margin:54px 0 18px;font-weight:600;letter-spacing:-.03em}
+.lede{font-size:clamp(22px,3.4vw,30px);line-height:1.3;max-width:640px;margin:0 0 22px}
+.lede em{color:var(--hot)}
+.about p{max-width:600px;margin:0 0 14px}
+.now{margin:30px 0 0;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--mute)}
+.now b{color:var(--hot);font-weight:500}
+h2{font-size:15px;font-family:"IBM Plex Mono",monospace;font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin:74px 0 6px}
+.proj{padding:34px 0 30px;border-top:1px solid var(--line)}
+.head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.no{color:var(--hot)}h3{font-size:34px;line-height:1.1;margin:0;font-weight:600}
+.ver{border:1px solid var(--line);border-radius:3px;padding:1px 7px;color:var(--mute)}
+.stack{color:var(--mute);margin:6px 0 12px}.proj p:not(.stack){max-width:640px;margin:0 0 20px}
+.strip{display:flex;gap:14px;overflow-x:auto;padding:4px 22px 16px;margin:0 -22px;scroll-snap-type:x proximity}
+.strip img{height:360px;width:auto;border-radius:12px;border:1px solid var(--line);flex:none;scroll-snap-align:start;background:var(--line)}
+.strip:focus-visible{outline:2px solid var(--hot);outline-offset:-2px}
+ol.steps{padding:0;list-style:none;counter-reset:s;max-width:640px}
+ol.steps li{counter-increment:s;padding:8px 0 8px 40px;position:relative;border-bottom:1px dashed var(--line)}
+ol.steps li:before{content:counter(s);position:absolute;left:0;top:9px;font:500 13px "IBM Plex Mono",monospace;color:var(--hot)}
+.shelf{max-width:640px;padding:0;list-style:none}.shelf li{padding:7px 0;border-bottom:1px dashed var(--line)}
+.shelf b{font-weight:600}
+footer{margin-top:80px;padding:26px 0 40px;border-top:1px solid var(--line);color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+footer a{color:var(--ink)}a{color:var(--hot)}
+@media(max-width:560px){body{font-size:18px}.strip img{height:300px}nav a{margin-left:12px}}
+</style></head><body><div class="wrap">
+<nav><a href="#top">krishna</a><span><a href="#apps">apps</a><a href="#how">how</a><a href="#shelf">shelf</a><a href="https://github.com/krishna000627-pixel">github</a></span></nav>
+<header id="top"><h1>Krishna</h1>
+<p class="lede">I make Android apps for problems I actually have, and I make them on my <em>phone</em>.</p>
+<div class="about"><p>No laptop. I plan each change, Claude and I write the Kotlin, GitHub builds it, and I test it on my own OPPO with 4 GB of RAM. Most of what is below is something I could not find anywhere else, so I built it.</p></div>
+<p class="now mono"><b>now</b> &nbsp;QuestBlock v285, App Hub, Myne, and whatever breaks next.</p></header>
+<h2 id="apps">Apps</h2>
+<article class="proj" id="questblock"><div class="head"><span class="no">01</span><h3>QuestBlock</h3><span class="ver">v285</span></div>
+<p class="stack">Kotlin, Compose</p><p>The one I keep coming back to. Real tasks, like finishing a Class 12 chapter, turn into quests that earn coins, and coins buy minutes on the apps that eat my time. It started as an app blocker. Now it has a shop, ranks, a focus mode, weekly reviews and more themes than I planned.</p><div class="strip" tabindex="0" aria-label="QuestBlock screenshots"><img src="assets/questblock-1.webp" alt="QuestBlock: Home" loading="lazy" width="340" height="760"><img src="assets/questblock-2.webp" alt="QuestBlock: Shop" loading="lazy" width="340" height="760"><img src="assets/questblock-3.webp" alt="QuestBlock: Player hub" loading="lazy" width="340" height="760"><img src="assets/questblock-4.webp" alt="QuestBlock: Chapters" loading="lazy" width="340" height="760"><img src="assets/questblock-5.webp" alt="QuestBlock: Focus" loading="lazy" width="340" height="760"><img src="assets/questblock-6.webp" alt="QuestBlock: System theme" loading="lazy" width="340" height="760"><img src="assets/questblock-7.webp" alt="QuestBlock: Carnival theme" loading="lazy" width="340" height="760"><img src="assets/questblock-8.webp" alt="QuestBlock: Zen theme" loading="lazy" width="340" height="760"></div></article><article class="proj" id="apphub"><div class="head"><span class="no">02</span><h3>App Hub</h3><span class="ver">v37 and counting</span></div>
+<p class="stack">Kotlin, Compose, Room</p><p>I got tired of unzipping and typing commands, so I built the thing that does it. Pick a zip, it pushes only the changed files to GitHub, GitHub builds and signs the APK, and I install it from the same screen. It also writes the prompt I paste to Claude when a build breaks.</p><div class="strip" tabindex="0" aria-label="App Hub screenshots"><img src="assets/apphub-1.webp" alt="App Hub: Dashboard" loading="lazy" width="340" height="760"><img src="assets/apphub-2.webp" alt="App Hub: Prompt maker" loading="lazy" width="340" height="760"><img src="assets/apphub-3.webp" alt="App Hub: Wrong app warning" loading="lazy" width="340" height="760"><img src="assets/apphub-4.webp" alt="App Hub: Build log" loading="lazy" width="340" height="760"><img src="assets/apphub-5.webp" alt="App Hub: Newer UI" loading="lazy" width="340" height="760"><img src="assets/apphub-6.webp" alt="App Hub: Themes" loading="lazy" width="340" height="760"></div></article><article class="proj" id="bgbrowser"><div class="head"><span class="no">03</span><h3>BgBrowser</h3><span class="ver">v11</span></div>
+<p class="stack">Kotlin, WebView</p><p>Sites that read novels aloud stop the moment the screen locks. This browser keeps the page alive with a foreground service and a fake media session, so I can fall asleep to a chapter. There is a sleep timer, and Tor tabs because I wanted them.</p><div class="strip" tabindex="0" aria-label="BgBrowser screenshots"><img src="assets/bgbrowser-1.webp" alt="BgBrowser: Reading a novel site" loading="lazy" width="340" height="760"><img src="assets/bgbrowser-2.webp" alt="BgBrowser: Menu" loading="lazy" width="340" height="760"><img src="assets/bgbrowser-3.webp" alt="BgBrowser: Appearance" loading="lazy" width="340" height="760"><img src="assets/bgbrowser-4.webp" alt="BgBrowser: Tor settings" loading="lazy" width="340" height="760"></div></article><article class="proj" id="videowall"><div class="head"><span class="no">04</span><h3>Videowall</h3><span class="ver">v30</span></div>
+<p class="stack">OpenGL</p><p>Live wallpapers from videos, GIFs and plain images. It shuffles on every unlock, pauses on a double tap, and lets go of the video decoder when I am away from the home screen so the battery lasts.</p><div class="strip" tabindex="0" aria-label="Videowall screenshots"><img src="assets/videowall-1.webp" alt="Videowall: Library" loading="lazy" width="340" height="760"><img src="assets/videowall-2.webp" alt="Videowall: Settings" loading="lazy" width="340" height="760"><img src="assets/videowall-3.webp" alt="Videowall: Wallpaper preview" loading="lazy" width="340" height="760"></div></article><article class="proj" id="aria"><div class="head"><span class="no">05</span><h3>Aria Reply</h3></div>
+<p class="stack">Kotlin, Groq, Gemini</p><p>When I am busy, Aria answers my WhatsApp in Hinglish and says plainly that it is an AI. If I promise something, say confirming an arrival time, it keeps a follow-up so I do not forget. Runs on Groq or Gemini.</p><div class="strip" tabindex="0" aria-label="Aria Reply screenshots"><img src="assets/aria-1.webp" alt="Aria Reply: Settings" loading="lazy" width="340" height="760"><img src="assets/aria-2.webp" alt="Aria Reply: Filters and routine" loading="lazy" width="340" height="760"><img src="assets/aria-3.webp" alt="Aria Reply: Reply marker" loading="lazy" width="340" height="760"><img src="assets/aria-4.webp" alt="Aria Reply: Logs" loading="lazy" width="340" height="760"></div></article><article class="proj" id="myne"><div class="head"><span class="no">06</span><h3>Myne</h3></div>
+<p class="stack">Android</p><p>An open-source ebook app I took over. I removed the original author's links and pages, rebranded it as my own, and added it to App Hub. Browse, download, read.</p><div class="strip" tabindex="0" aria-label="Myne screenshots"><img src="assets/myne-1.webp" alt="Myne: All books" loading="lazy" width="340" height="760"><img src="assets/myne-2.webp" alt="Myne: Book page" loading="lazy" width="340" height="760"><img src="assets/myne-3.webp" alt="Myne: Reader" loading="lazy" width="340" height="760"><img src="assets/myne-4.webp" alt="Myne: Library" loading="lazy" width="340" height="760"></div></article><article class="proj" id="gscholar"><div class="head"><span class="no">07</span><h3>GScholar</h3><span class="ver">v8</span></div>
+<p class="stack">Android</p><p>Google Scholar without the clutter. Search a topic, star papers into an offline library, and get alerts every 6, 12 or 24 hours. Independent app, not made by Google.</p><div class="strip" tabindex="0" aria-label="GScholar screenshots"><img src="assets/gscholar-1.webp" alt="GScholar: Explore" loading="lazy" width="340" height="760"><img src="assets/gscholar-2.webp" alt="GScholar: Results" loading="lazy" width="340" height="760"><img src="assets/gscholar-3.webp" alt="GScholar: Library" loading="lazy" width="340" height="760"><img src="assets/gscholar-4.webp" alt="GScholar: Settings" loading="lazy" width="340" height="760"></div></article><article class="proj" id="camouflage"><div class="head"><span class="no">08</span><h3>Camouflage</h3></div>
+<p class="stack">Android</p><p>Covers chosen apps with a fake "app not supported" screen and hides private photos and videos behind a PIN. Unlocks with taps, hold gestures or volume codes.</p><div class="strip" tabindex="0" aria-label="Camouflage screenshots"><img src="assets/camouflage-1.webp" alt="Camouflage: Home" loading="lazy" width="340" height="760"><img src="assets/camouflage-2.webp" alt="Camouflage: Blocked apps" loading="lazy" width="340" height="760"><img src="assets/camouflage-3.webp" alt="Camouflage: Unlock methods" loading="lazy" width="340" height="760"><img src="assets/camouflage-4.webp" alt="Camouflage: Disguises" loading="lazy" width="340" height="760"></div></article>
+<h2 id="how">How an update ships</h2>
+<ol class="steps"><li>Zip the project and give it a version.</li><li>App Hub compares it with the repo and pushes only what changed, as one commit.</li><li>GitHub Actions builds the APK and signs it.</li><li>I install it from App Hub and see if it survives.</li></ol>
+<p style="max-width:640px">This used to be a pile of Termux scripts. Same idea, fewer typos.</p>
+<h2 id="shelf">On the shelf</h2>
+<ul class="shelf"><li><b>QuestPhone</b> - a gamified launcher with a quest system, vault and AI sidekick. Lots of features, on hold because of a launcher restriction. Its ideas moved into QuestBlock.</li>
+<li><b>Snaptube</b> - a WhatsApp-style chat app I scrapped because it was not useful.</li>
+<li><b>SnapBridge</b> - encrypted messaging with snaps, streaks and QR friends.</li>
+<li><b>ReelGuard</b> - counts and caps reels and shorts across social apps.</li>
+<li><b>Habitica fork</b> - offline copy with an app blocker that charges coins.</li>
+<li><b>DaoLauncher</b> - a second launcher experiment.</li></ul>
+<footer><span>Built on a phone.</span><a href="https://github.com/krishna000627-pixel">github.com/krishna000627-pixel</a></footer>
+</div></body></html>
